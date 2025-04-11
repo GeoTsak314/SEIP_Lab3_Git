@@ -18,12 +18,18 @@
     <div id="secretBunny">🐰</div>
 
     <script>
-        // Easter egg: Konami code reveals rainbow background
+        // Easter egg: Mega Jump cheat code
+        const megaJumpCode = ['q','q','s','o','o','q','q','ArrowLeft','ArrowDown','ArrowRight','ArrowUp'];
         let keys = [];
+    
         document.addEventListener('keydown', (e) => {
             keys.push(e.key);
-            if (keys.join(',').includes('ArrowUp,ArrowUp,ArrowDown,ArrowDown')) {
-                document.body.style.background = 'linear-gradient(45deg, red,orange,yellow,green,blue,indigo,violet)';
+            // Keep array the same length as the code
+            if (keys.length > megaJumpCode.length) keys.shift();
+
+            if (keys.join(',') === megaJumpCode.join(',')) {
+                alert('Mega Jump activated! 🕹️');
+                document.body.style.background = 'linear-gradient(to right, cyan, limegreen)';
             }
         });
     </script>
