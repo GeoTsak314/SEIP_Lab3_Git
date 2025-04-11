@@ -16,6 +16,15 @@ body {
 .egg:hover {
     transform: scale(1.1);
 }
+.egg.pink {
+    background: linear-gradient(to right, pink, magenta);
+}
+.egg.teal {
+    background: linear-gradient(to right, teal, lightblue);
+}
+.egg.gold {
+    background: linear-gradient(to right, gold, orange);
+}
 #secretBunny {
     display: none;
     position: fixed;
