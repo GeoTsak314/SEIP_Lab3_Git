@@ -1,11 +1,11 @@
 body {
-    background-color: #f8e8ff;
+    background-color: yellow;
     font-family: Arial, sans-serif;
     text-align: center;
 }
 .egg {
     display: inline-block;
-    width: 100px;
+    width: 120px;
     height: 130px;
     background: linear-gradient(to right, blue, orange);
     border-radius: 50% 50% 50% 50% / 60% 60% 40% 40%;
@@ -24,6 +24,9 @@ body {
 }
 .egg.gold {
     background: linear-gradient(to right, gold, orange);
+}
+.egg.green {
+    background: darkgreen;
 }
 #secretBunny {
     display: none;
